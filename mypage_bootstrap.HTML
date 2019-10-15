@@ -2,12 +2,17 @@
     <html>
       <head>
         <title>About Me</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!--Bootstrap Initialization-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       </head>
       <body>
-        <div class="container">
+      <div class="container">
+        <div>
           <h1 style="display:inline;">Zahraa Abbasi - </h1>
           <h2 style="display:inline;"> <font color="grey">Software Development and Methods</font> </h2>
         </div>
@@ -40,30 +45,33 @@
       			<td>HTML, CSS</td>
     		</tr>
         
-        <div class="container">
-          <button type="button" class="btn btn-primary" data-toggle="collapse">Countries Travlled</button>
-          <div id="demo" class="collapse">
-          <ul>
-            <li>Czech Republic</li>
-            <li>Egypt</li>
-            <li>U.A.E.</li>
-          </ul>
-          </div>
-        </div>
     	
-      <h3>Countries Travelled</h3>
-    		<ul>
-  				<li>Czech Republic</li>
-  				<li>Egypt</li>
-  				<li>U.A.E.</li>
-			</ul>
-		<h3>My Interests</h3>
-    		<ol>
-  				<li>C++</li>
-  				<li>Python</li>
-  				<li>HTML</li>
-			</ol>
-
+     <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Countries Visited</a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Interests</button>
+          </p>
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                    <ul>
+                        <li>Czech Republic</li>
+                        <li>Eqypt</li>
+                        <li>U.A.E.</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                    <ol>
+                        <li>Hiking</li>
+                        <li>Finding Music</li>
+                        <li>Coding</li>
+                    </ol>
+                </div>
+              </div>
+            </div>
+          </div>
       <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
         Click me!
       </button>
@@ -72,13 +80,13 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">That's all folks!</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
             </div>
             <div class="modal-body">
-            ...
+            Hope you enjoyed!
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -86,5 +94,6 @@
           </div>
         </div>
       </div>
+    </div>
       </body>
     </html>
