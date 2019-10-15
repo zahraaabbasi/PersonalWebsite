@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html></html>
+    <head>
+        <title> Form </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+        <!--Bootstrap Initialization-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/scripts.css">
+        <!--------------------------->
+    </head>
+    <body class="center" >
+        <div class = "container">
+            <br>
+          <h1>Add New Article</h1>
+            <form>
+                <br>
+                    <div class="form-group">
+                      <label for="articleTitle">Article Title</label>
+                      <input type="title" class="form-control" id="articleTitle" aria-describedby="emailHelp" placeholder="Title">
+                    </div>
+                    <div class="form-group">
+                      <label for="authorName">Author Name</label>
+                      <input type="authorName" class="form-control" id="exampleInputPassword1" placeholder="Name">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                          <p> Upload Files:</p>
+                          <input type="file" id="myFile" name="filename2">
+                        </div>
+                        <div class="col">
+                          <p> Pages </p>
+                          <div class="dropdown">
+                              <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Academics
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                              </div>
+                            </div>
+                        </div>  
+                    </div>
+                     
+                    
+                    <br>
+                      <div class="row">
+                        <p>Article Text</p>
+                        <textarea rows="10" cols="175" ></textarea>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col"> 
+                          <p> Select Tags</p>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Python</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">C++</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+                                <label class="form-check-label" for="inlineCheckbox3">Java</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+                                  <label class="form-check-label" for="inlineCheckbox3">Scala</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+                                    <label class="form-check-label" for="inlineCheckbox3">Perl</label>
+                                  </div>
+                        </div>
+                        <div class="col"> 
+                          <p> Visibility </p>
+                            <label class="radio-inline"><input type="radio" name="optradio" checked>Public</label>
+                            <br>
+                            <label class="radio-inline"><input type="radio" name="optradio">Private</label>
+                        </div>
+                      </div>
+                      <p> Login to Finish Submission </p>
+                      <div class="row">
+                          <div class="col">
+                            <label for="staticEmail2" class="sr-only">Email</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Username">
+                          </div>
+                          <div class="col">
+                            <label for="inputPassword2" class="sr-only">Password</label>
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                          </div>
+                        </div>
+                        <br>
+                        <div class="col"> 
+                        <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                        <label class="form-check-label" for="autoSizingCheck">
+                          Remember me
+                        </label>
+                      </div>
+                        <br>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                  </form>
+        </div>
+        </div>
+    </body>
+</html>
